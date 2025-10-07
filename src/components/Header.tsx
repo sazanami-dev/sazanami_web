@@ -3,14 +3,15 @@ import Image from 'next/image';
 export const Header = () =>{
     return (
         <>
-        <Image
-          className=""
-          src="/sazanami_dev.svg"
-          alt="sazanami_dev.svg"
-          width={180}
-          height={38}
-          priority
-        />
+            <Image
+            className="m-3"
+            src="/sazanami_dev.svg"
+            alt="sazanami_dev_logo"
+            width={220}
+            height={38}
+            priority
+            objectFit='contain'
+            />
         </>
     );
 }
