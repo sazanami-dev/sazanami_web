@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const Header = () =>{
     return (
-        <>
+        <header>
             <Link href="/" className="flex items-center">
             
                 <Image
@@ -16,6 +16,6 @@ export const Header = () =>{
                 objectFit='contain'
                 />
             </Link>
-        </>
+        </header>
     );
 }
