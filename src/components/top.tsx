@@ -7,7 +7,7 @@ export const Top = () => {
       <Image
         src="background_img.svg"
         alt="background_img"
-        className="ml-auto"
+        className="ml-auto opacity-40"
         width={1600}
         height={38}
         priority
