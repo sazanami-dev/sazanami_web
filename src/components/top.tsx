@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Top = () => {
   return (
-    <>
+    <div className="relative w-full min-h-screen">
       <Image
         src="background_img.svg"
         alt="background_img"
@@ -13,14 +13,17 @@ export const Top = () => {
         priority
         objectFit="contain"
       />
-      <Image
-        src="/main.JPG"
+      <div className="absolute top-0 left-0 w-full h-screen flex items-center justify-end pr-35">
+        <Image
+        src="/main.svg"
         alt="main"
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        width={400}
+        className="object-contain"
+        width={650}
         height={300}
         priority
       />
-    </>
+      </div>
+      
+    </div>
   );
 };
