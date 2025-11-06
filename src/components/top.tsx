@@ -4,7 +4,7 @@ import Link from "next/link";
 export const Top = () => {
   return (
     <div className="relative w-full min-h-screen">
-      <Image
+    <Image
         src="background_img.svg"
         alt="background_img"
         className="ml-auto opacity-40 object-contain"
@@ -18,8 +18,8 @@ export const Top = () => {
         {/* 左半分：ロゴ */}
         <div className="w-1/2 flex justify-center">
           <Image
-            src="/sazanami_dev.svg"
-            alt="sazanami_dev_log"
+            src="/log-phrase.svg"
+            alt="sazanami_dev_logo"
             className="object-contain sm:w-[20vw] md:w-[25vw] lg:w-[40vw]"
             width={800}
             height={300}
