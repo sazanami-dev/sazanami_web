@@ -13,17 +13,31 @@ export const Top = () => {
         priority
         objectFit="contain"
       />
-      <div className="absolute top-0 left-0 w-full h-screen flex items-center justify-end pr-35">
-        <Image
-        src="/main.svg"
-        alt="main"
-        className="object-contain"
-        width={650}
-        height={300}
-        priority
-      />
+      {/* 上下は items-center で元のまま垂直中央。左右は1/2ずつの領域で中央寄せ */}
+      <div className="absolute top-0 left-0 w-full h-screen flex items-center">
+        {/* 左半分：ロゴ */}
+        <div className="w-1/2 flex justify-center">
+          <Image
+            src="/sazanami_dev.svg"
+            alt="sazanami_dev_log"
+            className="object-contain sm:w-[20vw] md:w-[25vw] lg:w-[40vw]"
+            width={800}
+            height={300}
+            priority
+          />
+        </div>
+        {/* 右半分：main画像 */}
+        <div className="w-1/2 flex justify-center">
+          <Image
+            src="/main.svg"
+            alt="main"
+            className="object-contain sm:w-[20vw] md:w-[30vw] lg:w-[35vw]"
+            width={650}
+            height={300}
+            priority
+          />
+        </div>
       </div>
-      
     </div>
   );
 };
