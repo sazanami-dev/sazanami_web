@@ -5,16 +5,17 @@ export const Header = () =>{
     return (
         <header>
             <Link href="/" className="flex items-center">
-            
-                <Image
-                className="m-3"
-                src="/sazanami_dev.svg"
-                alt="sazanami_dev_logo"
-                width={220}
-                height={38}
-                priority
-                objectFit='contain'
-                />
+                <div className='w-[40vw] md:w-[30vw]'>
+                    <Image
+                    className="m-3"
+                    src="/sazanami_dev.svg"
+                    alt="sazanami_dev_logo"
+                    width={220}
+                    height={38}
+                    priority
+                    objectFit='contain'
+                    />
+                </div>
             </Link>
         </header>
     );
