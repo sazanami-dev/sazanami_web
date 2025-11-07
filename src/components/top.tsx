@@ -20,7 +20,7 @@ export const Top = () => {
           <Image
             src="/log-phrase.svg"
             alt="sazanami_dev_logo"
-            className="object-contain sm:w-[20vw] md:w-[25vw] lg:w-[40vw]"
+            className="object-contain w-[40vw] sm:w-[40vw]"
             width={800}
             height={300}
             priority
@@ -31,7 +31,7 @@ export const Top = () => {
           <Image
             src="/main.svg"
             alt="main"
-            className="object-contain sm:w-[20vw] md:w-[30vw] lg:w-[35vw]"
+            className="object-contain w-[35vw] sm:w-[35vw]"
             width={650}
             height={300}
             priority
