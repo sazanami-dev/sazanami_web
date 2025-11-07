@@ -13,9 +13,7 @@ export const Top = () => {
         priority
         objectFit="contain"
       />
-      {/* 上下は items-center で元のまま垂直中央。左右は1/2ずつの領域で中央寄せ */}
       <div className="absolute top-0 left-0 w-full h-screen flex items-center">
-        {/* 左半分：ロゴ */}
         <div className="w-1/2 flex justify-center">
           <Image
             src="/log-phrase.svg"
@@ -26,7 +24,6 @@ export const Top = () => {
             priority
           />
         </div>
-        {/* 右半分：main画像 */}
         <div className="w-1/2 flex justify-center">
           <Image
             src="/main.svg"
