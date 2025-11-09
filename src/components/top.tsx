@@ -13,7 +13,7 @@ export const Top = () => {
         priority
         objectFit="contain"
       />
-      <div className="absolute top-0 left-0 w-full h-screen flex flex-col md:flex-row items-center md:items-center md:justify-normal pl-6 pr-6 pt-15 md:pl-0 md:pr-0">
+      <div className="absolute top-0 left-0 w-full h-screen flex flex-col md:flex-row items-center md:justify-normal pl-6 pr-6 pt-15 md:pl-0 md:pr-0">
         <div className="w-full md:w-1/2 flex md:justify-center order-2 md:order-1 mt-15 md:mt-0">
           <Image
             src="/log-phrase.svg"
