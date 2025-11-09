@@ -1,7 +1,7 @@
 import Image from "next/image"
 export const About = () => {
 	return(
-		<div className="-mt-72 mb-30">
+		<div className="-mt-30 md:-mt-72 mb-30">
 			<div className="ml-3 sm:ml-10 lg:ml-32 xl:ml-50 2xl:ml-80">
 				<Image
 					src="/about-sazanami.svg"
