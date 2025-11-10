@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Header } from "../components/Header"
 import { Top } from "@/components/top";
 import { About } from "@/components/About";
+import { Footer } from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header/>
       <Top/>
       <About/>
+      <Footer/>
     </>
   );
 }
