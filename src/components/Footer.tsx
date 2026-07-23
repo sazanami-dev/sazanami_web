@@ -5,16 +5,24 @@ import { useMemo } from "react";
 export const Footer = () => {
   const year = useMemo(() => new Date().getFullYear(), []);
   return (
-    <footer className="w-full border-t border-neutral-200 bg-white/70 backdrop-blur-sm dark:bg-neutral-700 dark:border-neutral-700">
+    <footer className="w-full border-t border-neutral-200 bg-neutral-100/70 backdrop-blur-sm dark:bg-neutral-800 dark:border-neutral-800">
       <div className="mx-auto max-w-7xl px-6 py-10 flex flex-col gap-8">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="flex items-center gap-3">
+            <Image
+              src="/sazanami_dev.svg"
+              alt="sazanami_dev_logo_footer"
+              width={200}
+              height={50}
+              className="object-contain dark:hidden"
+              priority
+            />
             <Image
               src="/sazanami_dev-white.svg"
               alt="sazanami_dev_logo_footer"
               width={200}
               height={50}
-              className="object-contain"
+              className="object-contain hidden dark:block"
               priority
             />
           </div>
@@ -47,6 +55,16 @@ export const Footer = () => {
                 >
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M17.18 3h3.6l-7.86 9.02L22.44 21h-5.95l-4.66-6-5.34 6H2.9l8.4-9.44L3 3h6.05l4.2 5.4L17.18 3Z"/>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.instagram.com/sazanami.dev"
+                  aria-label="Instagram"
+                  className="text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white transition-colors"
+                  target="_blank"
+                >
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
                   </svg>
                 </a>
                 <a
