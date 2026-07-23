@@ -5,16 +5,24 @@ import { useMemo } from "react";
 export const Footer = () => {
   const year = useMemo(() => new Date().getFullYear(), []);
   return (
-    <footer className="w-full border-t border-neutral-200 bg-white/70 backdrop-blur-sm dark:bg-neutral-700 dark:border-neutral-700">
+    <footer className="w-full border-t border-neutral-200 bg-neutral-100/70 backdrop-blur-sm dark:bg-neutral-800 dark:border-neutral-800">
       <div className="mx-auto max-w-7xl px-6 py-10 flex flex-col gap-8">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="flex items-center gap-3">
+            <Image
+              src="/sazanami_dev.svg"
+              alt="sazanami_dev_logo_footer"
+              width={200}
+              height={50}
+              className="object-contain dark:hidden"
+              priority
+            />
             <Image
               src="/sazanami_dev-white.svg"
               alt="sazanami_dev_logo_footer"
               width={200}
               height={50}
-              className="object-contain"
+              className="object-contain hidden dark:block"
               priority
             />
           </div>
